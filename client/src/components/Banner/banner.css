@@ -37,7 +37,9 @@
     padding-top: 15px;
     text-align: justify;
 }
-
+.link-connect{
+    text-decoration:none
+}
 .banner button{
     color: #fff;
     font-weight: 700;
