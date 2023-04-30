@@ -29,10 +29,7 @@ export const Contact= ()=> {
             let response = await fetch("http://portfolio-app-production-d86f.up.railway.app/contact", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json;charset=utf-8",
-                "Access-Control-Allow-Origin": "*", // Agregar este encabezado para permitir todas las solicitudes CORS
-                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE", // Agregar los métodos permitidos
-                "Access-Control-Allow-Headers": "Content-Type", // Agregar los encabezados permitidos
+                "Content-Type": "application/json;charset=utf-8"
             },
             body: JSON.stringify(formDetails),
             });
