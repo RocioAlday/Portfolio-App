@@ -52,7 +52,7 @@ export const Banner= ()=> {
                             As a Fullstack Developer, I have knowledge and practical experience in both frontend and backend development, which allows me to have a comprehensive view of the process of creating apps. 
                             I am searching for new challenges and opportunities to contribute to a project team and continue learning and improving my skills.
                         </p>
-                        <button className="bg-transparent border-0" onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size= {25} /></button>
+                        <a href="#connect" className="link-connect"><button className="bg-transparent border-0" onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size= {25} /></button></a>
                     </Col>
                     <Col xs={12} md={6} xl={5} >
                         <img src={headerImg} alt="Headder Img" className="header"/>
