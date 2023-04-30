@@ -3,7 +3,7 @@ import { Nav, Container, Navbar} from "react-bootstrap";
 import LogoImage from "../../Images/Logo-chico.png";
 import {BsGithub} from 'react-icons/bs';
 import {BsLinkedin} from 'react-icons/bs';
-import '../NavBar/NavBar.css';
+import './navbar.css';
 
 export const NavBar= ()=> {
     const [activeLink, setActiveLink]= useState('home');  
