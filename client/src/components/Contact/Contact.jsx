@@ -28,6 +28,7 @@ export const Contact= ()=> {
             setButtonText("Sending...");
             let response = await fetch("http://portfolio-app-production-d86f.up.railway.app/contact", {
             method: "POST",
+            mode: 'no-cors',
             headers: {
                 "Content-Type": "application/json;charset=utf-8"
             },
