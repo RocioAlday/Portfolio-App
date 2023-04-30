@@ -26,10 +26,13 @@ export const Contact= ()=> {
         e.preventDefault();
         if (formDetails.firstname && formDetails.lastname && formDetails.email && formDetails.message) {
             setButtonText("Sending...");
-            let response = await fetch("http://localhost:3001/contact", {
+            let response = await fetch("http://portfolio-app-production-d86f.up.railway.app/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
+                "Access-Control-Allow-Origin": "*", // Agregar este encabezado para permitir todas las solicitudes CORS
+                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE", // Agregar los métodos permitidos
+                "Access-Control-Allow-Headers": "Content-Type", // Agregar los encabezados permitidos
             },
             body: JSON.stringify(formDetails),
             });
