@@ -26,9 +26,8 @@ export const Contact= ()=> {
         e.preventDefault();
         if (formDetails.firstname && formDetails.lastname && formDetails.email && formDetails.message) {
             setButtonText("Sending...");
-            let response = await fetch("http://portfolio-app-production-d86f.up.railway.app/contact", {
+            let response = await fetch("https://portfolio-app-production-d86f.up.railway.app/contact", {
             method: "POST",
-            mode: 'no-cors',
             headers: {
                 "Content-Type": "application/json;charset=utf-8"
             },
