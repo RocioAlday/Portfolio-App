@@ -26,11 +26,8 @@ export const Projects= ()=> {
                   
 
               {project.map((item, index) => (
-          <div
-            key={index}
-            // style={{ backgroundImage: `url(${item.image})`, backgroundSize: 'cover'}}
-            // className="rounded-md flex content-div group"
-          >
+
+          <div key={index}>
             <img src= {item.image} className= "imag img-fluid rounded-md content-div" />
             
             <div className="text-work">

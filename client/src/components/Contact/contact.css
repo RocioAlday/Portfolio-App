@@ -57,22 +57,14 @@
     z-index: 1;
     position: relative;
   }
+
   .connect form button:hover {
-    color: #5b5959;
-  }
-  .connect form button::before {
     content: "";
     background: linear-gradient(90deg, rgb(184, 137, 222) 0%, 7.47162%, rgb(236, 155, 180) 15.279%, 45.4254%, rgb(243, 167, 155) 75.5718%);
     border-radius: 20px;
     border-width: 0.08px;
-    width: 0;
-    height: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-    transition: 0.3s ease-in-out;
   }
-  .connect form button:hover::before {
-    width: 100%;
-  }
+ 
