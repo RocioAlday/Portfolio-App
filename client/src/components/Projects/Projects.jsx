@@ -28,7 +28,15 @@ export const Projects= ()=> {
               {project.map((item, index) => (
 
           <div key={index}>
-            <img src= {item.image} className= "imag img-fluid rounded-md content-div" />
+            {item.hasOwnProperty('image') ? 
+             <img src= {item.image} className= "img-fluid rounded-md content-div" /> 
+             : 
+             <video controls>
+                <source src={index.video} type="video/mp4" />
+                Su navegador no soporta el formato de video.
+             </video>
+            }
+           
             
             <div className="text-work">
                 {item.name}
@@ -51,6 +59,15 @@ export const Projects= ()=> {
                   >
                     Live
                   </button>
+                  
+                </a> : <></>}
+                {item.video ? <a href={item.video} target="_blank">
+                  <button
+                    className="button"
+                  >
+                    Video
+                  </button>
+                  
                 </a> : <></>}
               </div>
           </div>
