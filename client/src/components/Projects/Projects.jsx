@@ -41,8 +41,11 @@ export const Projects= ()=> {
             <div className="text-work">
                 {item.name}
             </div>
+            <div className="pt-2">
+              {item.description}
+            </div>
 
-              <div className="pt-8 text-center">
+              <div className="mt-8 text-center">
 
                 <a href={item.github} target="_blank">
                   <button
