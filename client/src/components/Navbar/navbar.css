@@ -27,7 +27,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
     padding: 0px 0;
-    background-color:#383737 
+    background-color:#565454 
 }
 
 nav.navbar a.navbar-brand {
@@ -49,7 +49,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+    opacity: 2;
 }
 
 span.navbar-text {
@@ -188,7 +188,7 @@ span.navbar-text {
   }
 
   .img-size{
-    width: 80px;
+    width: 60px;
     height: auto;
   }
 
@@ -197,3 +197,4 @@ span.navbar-text {
     width: 25px;
     height: 25px;
   }
+
