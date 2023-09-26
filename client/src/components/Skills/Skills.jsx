@@ -52,6 +52,7 @@ export const Skills= ()=>{
                                     <h6>Html </h6>
                                     <h6>Javascript </h6>
                                     <h6>Bootstrap</h6>
+                                    <h6>Tailwind </h6>
                                 </div>
                                 </div>
                               </div>
@@ -67,6 +68,7 @@ export const Skills= ()=>{
                                     <h6>APIRest </h6>
                                     <h6>PostgresSql </h6>
                                     <h6>Jest </h6>
+                                    <h6>Docker </h6>
                                 </div>
                                 </div>
                               </div>
