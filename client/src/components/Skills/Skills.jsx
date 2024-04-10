@@ -48,11 +48,12 @@ export const Skills= ()=>{
                                 <div className="list-items">
                                     <h6>React </h6>
                                     <h6>Redux </h6>
-                                    <h6>Css </h6>
-                                    <h6>Html </h6>
+                                    <h6>CSS3 </h6>
+                                    <h6>HTML5 </h6>
                                     <h6>Javascript </h6>
                                     <h6>Bootstrap</h6>
                                     <h6>Tailwind </h6>
+                                    <h6>SAP Fiori </h6>
                                 </div>
                                 </div>
                               </div>
@@ -69,6 +70,7 @@ export const Skills= ()=>{
                                     <h6>PostgresSql </h6>
                                     <h6>Jest </h6>
                                     <h6>Docker </h6>
+                                    <h6>SAP ABAP, BTP, HANA </h6>
                                 </div>
                                 </div>
                               </div>

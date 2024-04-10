@@ -3,14 +3,15 @@ import {Container, Row, Col} from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../../Images/woman1.jpg';
 import './banner.css';
+import { BsRocketTakeoff } from "react-icons/bs";
 
 export const Banner= ()=> {
     const [loopNum, setLoopNum]= useState(0);
     const [isDeleting, setisDeleting]= useState(false);
-    const toRotate= ['Engineer', 'Backend', 'Frontend', 'Freelancer', ];
+    const toRotate= ['Engineer', 'Backend', 'Frontend', 'SAP Certified Associate', ];
     const [text, setText]= useState('');
     const period= 2000;
-    const [delta, setDelta]= useState(500 - Math.random() *100);
+    const [delta, setDelta]= useState(100 - Math.random() *100);
 
     useEffect(()=> {
         let ticker= setInterval(()=>{
@@ -48,9 +49,9 @@ export const Banner= ()=> {
                     <Col xs={12} md={6} xl={7} >
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi I'm Fullstack Dev. ` }<br/><span className="wrap">{text}</span></h1>
-                        <p>I am a Junior Fullstack Web Developer and Biomedical Engineer. My journey into the exciting world of programming began a year ago, but as an Engineer I always had a great interest and love for technology. 
-                            As a Fullstack Developer, I have knowledge and practical experience in both frontend and backend development, which allows me to have a comprehensive view of the process of creating apps. 
-                            I am searching for new challenges and opportunities to contribute to a project team and continue learning and improving my skills.
+                        <p>I'm a Junior Fullstack Developer and SAP Certified Associate Backend Developer. I'm also a Biomedical Engineer, but I've decided to focus my career on the 
+                            world of software development, where I can combine my passion for technology with my ability to solve problems, within industry 4.0.
+                            <p>I'm looking for new challenges and opportunities in the IT and business field. I would love to be part of a team providing value in the creation of innovative solutions that optimize business processes and improve operational efficiency <BsRocketTakeoff size={20} /></p>
                         </p>
                         <a href="#connect" className="link-connect"><button className="bg-transparent border-0" onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size= {25} /></button></a>
                     </Col>
